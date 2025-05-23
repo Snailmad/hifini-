@@ -1,11 +1,11 @@
 name: HIFINI-Auto-Checkin
 
 on:
-  workflow_dispatch:
-  schedule:
-    # UTC+8 ??:??
-    - cron: "40 23 * * *"
-
+  workflow_dispatch:          # 允许手动触发
+  schedule:                   # 定时触发
+    - cron: '00 00 * * *'     # 北京时间23:40（需指定时区）
+      timezone: 'Asia/Shanghai'
+      
 jobs:
   checkin:
     name: Checkin
