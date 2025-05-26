@@ -4,7 +4,6 @@ on:
   workflow_dispatch:          # 允许手动触发
   schedule:                   # 定时触发
     - cron: '01 00 * * *'     # 北京时间00:00（需指定时区）
-      timezone: 'Asia/Shanghai'
       
 jobs:
   checkin:
