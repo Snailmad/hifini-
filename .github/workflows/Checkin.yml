@@ -3,7 +3,7 @@ name: HIFINI-Auto-Checkin
 on:
   workflow_dispatch:          # 允许手动触发
   schedule:                   # 定时触发
-    - cron: '01 16 * * *'     
+    - cron: '00 16 * * *'     
       
 jobs:
   checkin:
